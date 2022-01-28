@@ -1,4 +1,4 @@
-# OCC - Search Engine
+# Search Engine
 
 Search API ussing Solr & Golang
 

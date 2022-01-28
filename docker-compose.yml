@@ -1,0 +1,29 @@
+version: '3.5'
+services:
+  solr:
+    image: 'solr'
+    container_name: 'solr-occ-search'
+    ports:
+      - "8983:8983"
+    volumes:
+      - data:/var/solr
+    command: 
+      - solr-precreate
+      - gettingstarted
+  api:
+    image: $OCC_IMAGE
+    container_name: $OCC_CONTAINER
+    restart: on-failure
+    ports:
+      - "${OCC_PORT}:${OCC_PORT}"
+    volumes:
+      - "${OCC_VOLUME}"
+    depends_on:
+      - solr
+
+networks:
+  default:
+    name: 'occ.dev'
+
+volumes:
+  data:
