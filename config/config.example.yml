@@ -1,0 +1,3 @@
+port: 9090
+bedug: true
+searchhost: http://localhost:8983/solr/example/select

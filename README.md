@@ -2,4 +2,4 @@
 
 Search API ussing Solr & Golang
 
-# Quick start
+## Quick start
