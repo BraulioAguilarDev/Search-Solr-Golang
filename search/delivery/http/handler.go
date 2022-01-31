@@ -28,6 +28,7 @@ func (hdlr *Handler) GetSearch(ctx *fiber.Ctx) error {
 
 	qsURLString, err := filter.ParserQuery(ctx, allowed)
 	if err != nil {
+		ctx.Status(400)
 		ctx.JSON(chttp.Failure(err.Error()))
 		return nil
 	}
