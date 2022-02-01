@@ -7,9 +7,14 @@ A simple search REST API using Apache Solr & Golang
 Starting service in Docker
 
 ```sh
+# Build docker image
 $ make docker
 
+# Execute containers
 $ make dc-up
+
+# Upload data info
+$ make seed 
 ```
 
 ## Running
