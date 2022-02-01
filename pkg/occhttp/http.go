@@ -59,16 +59,10 @@ func Failure(details string) FailureResponse {
 }
 
 // NewClient func
-func NewClient(opts *Options) *request {
-	if opts == nil {
-		opts = &Options{
-			Timeout: 3 * time.Second,
-		}
-	}
-
+func NewClient() *request {
 	return &request{
 		Client: &http.Client{
-			Timeout: opts.Timeout,
+			Timeout: 5 * time.Second,
 		},
 	}
 }

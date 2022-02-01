@@ -39,12 +39,11 @@ func (s *SearchRepository) Find(query string) (*models.SolrResponse, error) {
 		Method:   http.MethodGet,
 	}
 
-	client := chttp.NewClient(opts)
+	client := chttp.NewClient()
 
 	result, err := client.MakeRequest(opts)
 	if err != nil {
 		glog.V(5).Info(fmt.Sprintf("Make request error: %v", err))
-
 		return nil, err
 	}
 
@@ -53,13 +52,11 @@ func (s *SearchRepository) Find(query string) (*models.SolrResponse, error) {
 	body, err := ioutil.ReadAll(result.Body)
 	if err != nil {
 		glog.V(5).Info(fmt.Sprintf("ReadAll error: %v", err))
-
 		return nil, err
 	}
 
 	if err := json.Unmarshal([]byte(body), &searchResult); err != nil {
 		glog.V(5).Info(fmt.Sprintf("Unmarshal error: %v", err))
-
 		return searchResult, nil
 	}
 

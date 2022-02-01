@@ -9,7 +9,7 @@ services:
       - data:/var/solr
     command: 
       - solr-precreate
-      - gettingstarted
+      - jobs
   api:
     image: $API_IMAGE
     container_name: $API_CONTAINER
