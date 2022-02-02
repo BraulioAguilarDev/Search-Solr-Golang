@@ -1,4 +1,4 @@
-.PHONY: docker dc-up dc-down dc-stop dc-seed
+.PHONY: docker dc-up dc-down dc-stop dc-seed test
 
 docker:
 	docker build -t engine/golang .
@@ -14,3 +14,7 @@ dc-down:
 
 seed:
 	go run ./pkg/seed/seed.go
+
+test:
+# example
+	go test ./pkg/filter -v
