@@ -24,16 +24,23 @@ func NewHandler(useCase search.UseCase, debug bool) *Handler {
 // GetSearch func it's a simple handler to search results
 func (hdlr *Handler) GetSearch(ctx *fiber.Ctx) error {
 	// fields alowed
-	allowed := []string{"title", "text", "salary", "locality", "category"}
+	allowed := []string{
+		"title",
+		"text",
+		"salary",
+		"locality",
+		"category",
+	}
 
-	qsURLString, err := filter.ParserQuery(ctx, allowed)
+	queryParams, err := filter.ParserQuery(ctx.Request().URI().QueryArgs().String(), allowed)
 	if err != nil {
 		ctx.Status(400)
 		ctx.JSON(chttp.Failure(err.Error()))
 		return nil
 	}
 
-	response, err := hdlr.UseCase.Find(qsURLString)
+	// fmt.Println(queryParams)
+	response, err := hdlr.UseCase.Find(queryParams)
 	if err != nil {
 		return err
 	}

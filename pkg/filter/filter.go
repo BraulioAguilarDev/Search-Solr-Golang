@@ -3,8 +3,6 @@ package filter
 import (
 	"fmt"
 	"strings"
-
-	"github.com/gofiber/fiber/v2"
 )
 
 // Simulates InArray behavior at PHP -- checks if exist a value
@@ -20,12 +18,11 @@ func Exists(items []string, val string) bool {
 
 // ParserQuery parse our params (title, category, text, salary, locality)
 // to solr service
-func ParserQuery(ctx *fiber.Ctx, fields []string) (string, error) {
+func ParserQuery(queryStringURL string, fields []string) (string, error) {
 
 	var qFiler string
 
 	// example: ?category=data&title=base de datos
-	queryStringURL := ctx.Request().URI().QueryArgs().String()
 	if len(queryStringURL) == 0 {
 		return "*", nil
 	}

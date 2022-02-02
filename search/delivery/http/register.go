@@ -6,6 +6,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+// MakeSearchHandler register our endpoints in a group router
 func MakeSearchHandler(usecase search.UseCase, app *fiber.App, debug bool) {
 	handlerSearch := NewHandler(usecase, debug)
 

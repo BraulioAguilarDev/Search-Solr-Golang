@@ -39,7 +39,7 @@ func (a *App) Run(port string) error {
 }
 
 // Main function where we config usecases & repo
-// Our repo is a external API
+// Our repo is an external API
 func NewApp(debug bool) (*App, error) {
 	searchRepo := shttp.NewSearchRepository(c.Config.SolrInternalHost, debug)
 

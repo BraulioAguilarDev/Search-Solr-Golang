@@ -25,7 +25,7 @@ func NewSearchRepository(url string, debug bool) *SearchRepository {
 	}
 }
 
-// Find func execute request to external service with http client
+// Find func executes a request to external service with http client
 func (s *SearchRepository) Find(query string) (*models.SolrResponse, error) {
 	chttp.SetDebugMode(s.Debug)
 
