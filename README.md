@@ -8,7 +8,7 @@ We need to create our envs
 
 ```sh
 $ cp .env.example .env
-$ cp config/config.example.yml ./config.yml
+$ cp config/config.example.yml config.yml
 ```
 
 ## Test code

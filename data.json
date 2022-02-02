@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Golang Developer",
+    "text": "We are looking for a great Go developer who possesses a strong understanding of how best to leverage and exploit the language’s unique paradigms, idioms, and syntax. Your primary focus will be on developing Go packages and programs that are scalable and maintainable. You will ensure that these Go packages and programs are well documented and have reasonable test coverage. You will coordinate with the rest of the team working on different layers of the infrastructure. A commitment to collaborative problem solving, sophisticated design, and quality product is essential.",
+    "salary": "50,000",
+    "locality": "Queretaro",
+    "category": "dev"
+  },
+  {
+    "id": 2,
+    "title": "GoLang Engineer",
+    "text": "We are seeking a GoLang Engineer who will be working on the modernization of the our platform. This engineer will be working in a microservices environment with applications written in GoLang, will be assigned to one of several exciting teams that are developing a new, nimble and modern platform. The position will also play a critical role partnering with other development teams, testing and quality, and production support.",
+    "salary": "80,000",
+    "locality": "México",
+    "category": "dev"
+  },
+  {
+    "id": 3,
+    "title": "Lead Application Engineer",
+    "text": "We are hiring a Lead Engineer to drive the development of our Golang Core API and messaging subsystem. You will ensure that both meet our performance and quality requirements. Reporting to the VP of Engineering, you will show architectural leadership by growing our customer-facing capabilities. It is expected that you can take high-level architectural instructions, communicate those to the team, ensure that design goals are met, see that all necessary testing is included in development efforts, and facilitate the team moving as fast as possible by removing blockers. ",
+    "salary": "60,000",
+    "locality": "Remoto",
+    "category": "dev"
+  },
+  {
+    "id": 4,
+    "title": "DevOps",
+    "text": "Habilidades requeridas: Experience on AWS (DevOps) Experience with scripting (Shell, Python etc.,) Familiar or Experience with CICD in Jenkins [Pipeline],Git Exposure to open source technologies Exposure to associated technologies with Java (Mockito, SONAR, Github, Jenkins, Chef, Docker, Spark, Kafka etc.,) Experience in Docker, Docker compose, Docker registries, Api gateway Good experience on container orchestration technologies – Red Hat Open Shift, Docker, Kubernetes and public cloud Experience in application development using Java EE, Micro service, Spring framework integrating with Open Shift",
+    "salary": "90,000",
+    "locality": "Guadalajara, Jalisco",
+    "category": "infra"
+  },
+  {
+    "id": 5,
+    "title": "DevOps Specialist - Cdmx",
+    "text": " About position. We are a Direct-To-Consumer leading organization that has developed digital products and services that generate over $1B across 10 markets. We’re looking for someone who is quick on their feet, possesses strong technical skills, and isn’t afraid to ask questions. If you’re interested in creating a user-friendly environment by writing code and moving forward in your career, then this job is for you!",
+    "salary": "50,000",
+    "locality": "Cuauhtémoc, Ciudad de México",
+    "category": "infra"
+  },
+  {
+    "id": 6,
+    "title": "DBA administrador de bases de datos (SQL/MongoDB)",
+    "text": " Objetivo: Diseño e implementación de solución de Base de Datos con reglas de negocio desacopladas del código para dar mayor flexibilidad y agilidad en la construcción de productos de crédito y generar experiencias simples a nuestros clientes.",
+    "salary": "40,000",
+    "locality": "Tlalpan, Ciudad de México",
+    "category": "data"
+  },
+  {
+    "id": 7,
+    "title": "Diseñador WEB",
+    "text": "Buen manejo de Adobe ilustrador, Photoshop, Dreamweaver, Indesing, Premiere Pro Creación de elementos visuales como marcas, logotipos, ilustraciones originales. Elaboración de flayers, folletos y papelería relacionada. Desarrollo de gráficos y manejo de medios digitales Conocimiento en diseño de paginas web Maquetado en HTML y CSS Conocimiento en general en las diferentes ramas de diseño (web, edición de fotografía, diseño multimedia y video, diseño de campañas, ilustración, etc.) Experiencia en sector Gobierno",
+    "salary": "15,000",
+    "locality": "CDMX",
+    "category": "design"
+  },
+  {
+    "id": 8,
+    "title": "Data Engineer",
+    "text": "A Big Four is currently seeking a  Senior Associate  in Digital Lighthouse for  our  Consulting practice. Responsibilities: Rapidly architect, design, prototype, implement, and optimize software systems to tackle Data Access, Data Management and Data Science needs for a variety of Fortune 1000 corporations and other major organizations; develop modular code to solve “real” world problems following best practices in the industry Be a core player in technical process from ideation to delivery: Research, experiment, and utilize leading data platforms and container methodologies to migrate and/or scale cloud data solutions. Build pipelines and scalable analytic tools using leading technologies (for example: Hadoop, Spark, Kafka, Kubernetes, Terraform, Airflow, AWS, Azure, GCP, etc.) Help drive the engineering business by pursuing innovation funding, building targeted industry solutions and extendable platforms to expand our technology and solution delivery capabilities",
+    "salary": "55,000",
+    "locality": "Remoto - Solo México",
+    "category": "data"
+  },
+  {
+    "id": 9,
+    "title": "Analista de Operaciones y Materiales MONTERREY",
+    "text": "Únete a Grupo Aeroméxico como Analista de Operaciones y Materiales MONTERREY. Esta posición será responsable de realizar el armado, abastecimiento y control de formas, artículos de entretenimiento y confort en las aeronaves de Aeroméxico en forma oportuna, manteniendo la calidad requerida en el servicio, apego a las normas y estándares.",
+    "salary": "8,000",
+    "locality": "Monterrey",
+    "category": "operation"
+  },
+  {
+    "id": 10,
+    "title": "Asesor comercial",
+    "text": "Empresa del giro de vinos y licores solicita: Ejecutivo de ventas -- Sueldo base $14,000 (trabajo por honorarios) - Comisiones - Apoyo de gasolina $4,000 mensuales - Viáticos (gasolina, hospedaje, alimentos) Visitas a restaurantes y hoteles de la zona de Cancún, Riviera Maya, Tulum, Playa del Carmen, Mérida -- Horario de lunes a sábado -- Experiencia en ventas en un giro similar, vehículo propio",
+    "salary": "14,000",
+    "locality": "Q, Roo, Cancún Centro",
+    "category": "sale"
+  }
+]
