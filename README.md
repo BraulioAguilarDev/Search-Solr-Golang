@@ -2,6 +2,15 @@
 
 A simple search REST API using Apache Solr & Golang
 
+## Quick install
+
+We need to create our envs
+
+```sh
+$ cp .env.example .env
+$ cp config/config.example.yml ./config.yml
+```
+
 ## Test code
 
 Starting service in Docker
