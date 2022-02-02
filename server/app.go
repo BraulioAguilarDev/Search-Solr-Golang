@@ -38,8 +38,10 @@ func (a *App) Run(port string) error {
 	return nil
 }
 
+// Main function where we config usecases & repo
+// Our repo is a external API
 func NewApp(debug bool) (*App, error) {
-	searchRepo := shttp.NewSearchRepository(c.Config.SearchHost, debug)
+	searchRepo := shttp.NewSearchRepository(c.Config.SolrInternalHost, debug)
 
 	fiber := fiber.New()
 	fiber.Use(cors.New())

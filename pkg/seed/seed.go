@@ -5,11 +5,12 @@ import (
 	"io"
 	"net/http"
 	"os"
+	c "search-engine/config"
 	chttp "search-engine/pkg/occhttp"
 	"time"
 )
 
-var URL = "http://localhost:8983/solr/jobs/update/json?commit=true"
+var URL = fmt.Sprintf("%s/jobs/update/json?commit=true", c.Config.SolrExternalHost)
 
 func seed() (*http.Response, error) {
 	jsonFile, err := os.Open("data.json")

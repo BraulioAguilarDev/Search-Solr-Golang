@@ -1,3 +1,4 @@
 port: 9090
 bedug: true
-searchhost: http://localhost:8983/solr/example/select
+solrinternalhost: http://localhost:8983/solr/example/select # we can change jobs but it's necessary to change command "jobs"
+solrexternalhost: http://localhost:8983

@@ -8,14 +8,13 @@ import (
 )
 
 func main() {
-	// We build app instance with some params
-	// Debug mode
+	// We build app with custom params
 	app, err := server.NewApp(c.Config.Debug)
 	if err != nil {
 		glog.Fatal(err)
 	}
 
-	// Run function with specific port
+	// Run server at specific port
 	if err := app.Run(c.Config.Port); err != nil {
 		glog.Fatal(err)
 	}

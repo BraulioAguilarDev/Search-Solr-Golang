@@ -27,6 +27,7 @@ type Response struct {
 	Docs          []Docs `json:"docs"`
 }
 
+// Represents main Model that we receive from Solr storage
 type SolrResponse struct {
 	ResponseHeader ResponseHeader `json:"responseHeader"`
 	Response       Response       `json:"response"`

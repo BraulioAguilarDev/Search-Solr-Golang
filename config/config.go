@@ -6,9 +6,10 @@ import (
 )
 
 type Settings struct {
-	Port       string `default:"9090"`
-	Debug      bool   `default:"false"`
-	SearchHost string `default:"http://localhost:8983"`
+	Port             string `default:"9090"`
+	Debug            bool   `default:"false"`
+	SolrInternalHost string `default:"http://localhost:8983"`
+	SolrExternalHost string `default:"http://localhost:8983"`
 }
 
 var Config = Settings{}

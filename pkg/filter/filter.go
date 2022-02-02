@@ -7,6 +7,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+// Simulates InArray behavior at PHP -- checks if exist a value
 func Exists(items []string, val string) bool {
 	for _, item := range items {
 		if item == val {
